@@ -29,7 +29,22 @@ describe('app routes', () => {
           'mix ingredients',
           'put dough on cookie sheet',
           'bake for 10 minutes'
-        ]
+        ],
+        ingredients: [{
+          name: 'flour',
+          amount: 1,
+          measurement: 'cup'
+        },
+        {
+          name: 'salt',
+          amount: 1,
+          measurement: 'teaspoon'
+        },
+        {
+          name: 'chocolate chips',
+          amount: 2,
+          measurement: 'ounce'
+        }]
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -41,6 +56,24 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients:[{
+            _id: expect.any(String),
+            name: 'flour',
+            amount: 1,
+            measurement: 'cup'
+          },
+          {
+            _id: expect.any(String),
+            name: 'salt',
+            amount: 1,
+            measurement: 'teaspoon'
+          },
+          {
+            _id: expect.any(String),
+            name: 'chocolate chips',
+            amount: 2,
+            measurement: 'ounce'
+          }],
           __v: 0
         });
       });
@@ -74,6 +107,21 @@ describe('app routes', () => {
         'put dough on cookie sheet',
         'bake for 10 minutes'
       ],
+      ingredients: [{
+        name: 'flour',
+        amount: 1,
+        measurement: 'cup'
+      },
+      {
+        name: 'salt',
+        amount: 1,
+        measurement: 'teaspoon'
+      },
+      {
+        name: 'chocolate chips',
+        amount: 2,
+        measurement: 'ounce'
+      }]
     });
 
     return request(app)
@@ -89,6 +137,24 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients:[{
+            _id: expect.any(String),
+            name: 'flour',
+            amount: 1,
+            measurement: 'cup'
+          },
+          {
+            _id: expect.any(String),
+            name: 'salt',
+            amount: 1,
+            measurement: 'teaspoon'
+          },
+          {
+            _id: expect.any(String),
+            name: 'chocolate chips',
+            amount: 2,
+            measurement: 'ounce'
+          }],
           __v: 0
         });
       });
@@ -103,6 +169,21 @@ describe('app routes', () => {
         'put dough on cookie sheet',
         'bake for 10 minutes'
       ],
+      ingredients: [{
+        name: 'flour',
+        amount: 1,
+        measurement: 'cup'
+      },
+      {
+        name: 'salt',
+        amount: 1,
+        measurement: 'teaspoon'
+      },
+      {
+        name: 'chocolate chips',
+        amount: 2,
+        measurement: 'ounce'
+      }]
     });
 
     return request(app)
@@ -117,6 +198,24 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients:[{
+            _id: expect.any(String),
+            name: 'flour',
+            amount: 1,
+            measurement: 'cup'
+          },
+          {
+            _id: expect.any(String),
+            name: 'salt',
+            amount: 1,
+            measurement: 'teaspoon'
+          },
+          {
+            _id: expect.any(String),
+            name: 'chocolate chips',
+            amount: 2,
+            measurement: 'ounce'
+          }],
           __v: 0
         });
       });
@@ -131,6 +230,21 @@ describe('app routes', () => {
         'put dough on cookie sheet',
         'bake for 10 minutes'
       ],
+      ingredients: [{
+        name: 'flour',
+        amount: 1,
+        measurement: 'cup'
+      },
+      {
+        name: 'salt',
+        amount: 1,
+        measurement: 'teaspoon'
+      },
+      {
+        name: 'chocolate chips',
+        amount: 2,
+        measurement: 'ounce'
+      }]
     });
 
     return request(app)
@@ -140,6 +254,24 @@ describe('app routes', () => {
           _id: expect.any(String),
           name: res.body.name,
           directions: res.body.directions,
+          ingredients:[{
+            _id: expect.any(String),
+            name: 'flour',
+            amount: 1,
+            measurement: 'cup'
+          },
+          {
+            _id: expect.any(String),
+            name: 'salt',
+            amount: 1,
+            measurement: 'teaspoon'
+          },
+          {
+            _id: expect.any(String),
+            name: 'chocolate chips',
+            amount: 2,
+            measurement: 'ounce'
+          }],
           __v: 0
         });
       });
